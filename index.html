@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare — Student Mental Health Support</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <h1>MindCare</h1>
+      </div>
+      <p class="tagline">A safe space for students to check in, talk, and get support.</p>
+
+      <form id="loginForm" class="auth-form">
+        <label>Student Email</label>
+        <input type="email" id="email" placeholder="you@university.edu" required>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn-primary">Log In (Demo)</button>
+      </form>
+
+      <p class="switch-link">New here? <a href="#" id="goCounselor">Continue as Counselor →</a></p>
+      <p class="privacy-note">🔒 Your data is encrypted. Conversations are confidential unless a safety risk is detected.</p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

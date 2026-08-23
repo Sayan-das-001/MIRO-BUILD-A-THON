@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare — Counselor Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav dark">
+    <div class="brand"><span class="brand-dot"></span><h1>MindCare <span class="badge">Counselor</span></h1></div>
+    <div class="nav-right">
+      <a href="index.html" class="btn-outline small">Log out</a>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <section class="card alert-card">
+      <h2>🚨 Crisis Alerts</h2>
+      <div id="alertList" class="mood-history">
+        <p class="empty-state">No active alerts. All clear.</p>
+      </div>
+    </section>
+
+    <section class="stats-row">
+      <div class="stat-box"><span id="statCheckins">0</span><p>Check-ins Today</p></div>
+      <div class="stat-box"><span id="statBookings">0</span><p>Pending Bookings</p></div>
+      <div class="stat-box"><span id="statAlerts">0</span><p>Active Alerts</p></div>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming Sessions</h2>
+      <div id="sessionList" class="mood-history">
+        <p class="empty-state">No sessions scheduled.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/counselor.js"></script>
+</body>
+</html>

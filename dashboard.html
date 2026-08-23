@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare — Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="brand-dot"></span><h1>MindCare</h1></div>
+    <div class="nav-right">
+      <span id="userGreeting">Hi, Student</span>
+      <a href="index.html" class="btn-outline small">Log out</a>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <section class="card mood-card">
+      <h2>How are you feeling today?</h2>
+      <div class="mood-options">
+        <button class="mood-btn" data-mood="5">😄<span>Great</span></button>
+        <button class="mood-btn" data-mood="4">🙂<span>Good</span></button>
+        <button class="mood-btn" data-mood="3">😐<span>Okay</span></button>
+        <button class="mood-btn" data-mood="2">😔<span>Low</span></button>
+        <button class="mood-btn" data-mood="1">😢<span>Struggling</span></button>
+      </div>
+      <textarea id="moodNote" placeholder="Want to add a note? (optional)"></textarea>
+      <button id="saveMood" class="btn-primary">Save Check-in</button>
+      <p id="moodStatus" class="status-text"></p>
+    </section>
+
+    <section class="card">
+      <h2>Mood History</h2>
+      <div id="moodHistory" class="mood-history">
+        <p class="empty-state">No check-ins yet. Log your first mood above.</p>
+      </div>
+    </section>
+
+    <section class="quick-actions">
+      <a href="chatbot.html" class="action-card">
+        <h3>💬 Talk to AI Support</h3>
+        <p>Get an immediate, judgment-free first response</p>
+      </a>
+      <a href="booking.html" class="action-card">
+        <h3>📅 Book a Counselor</h3>
+        <p>Schedule a confidential session</p>
+      </a>
+      <a href="resources.html" class="action-card">
+        <h3>📚 Resource Library</h3>
+        <p>Self-help guides, articles, breathing exercises</p>
+      </a>
+    </section>
+  </main>
+
+  <script src="js/mood.js"></script>
+</body>
+</html>

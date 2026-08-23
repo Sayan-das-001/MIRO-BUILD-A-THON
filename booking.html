@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare — Book a Session</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="brand-dot"></span><h1>MindCare</h1></div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="btn-outline small">← Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <section class="card">
+      <h2>Book a Confidential Session</h2>
+      <form id="bookingForm" class="auth-form">
+        <label>Preferred Counselor</label>
+        <select id="counselor" required>
+          <option value="">Select...</option>
+          <option>Dr. Anika Sharma — General Counseling</option>
+          <option>Dr. Rohan Mehta — Academic Stress</option>
+          <option>Dr. Priya Nair — Anxiety & Depression</option>
+        </select>
+
+        <label>Preferred Date</label>
+        <input type="date" id="bookingDate" required>
+
+        <label>Preferred Time</label>
+        <input type="time" id="bookingTime" required>
+
+        <label>Reason (optional, kept confidential)</label>
+        <textarea id="bookingReason" placeholder="Briefly share what's on your mind..."></textarea>
+
+        <button type="submit" class="btn-primary">Confirm Booking</button>
+      </form>
+      <p id="bookingStatus" class="status-text"></p>
+    </section>
+
+    <section class="card">
+      <h2>Your Upcoming Sessions</h2>
+      <div id="bookingList" class="mood-history">
+        <p class="empty-state">No sessions booked yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>

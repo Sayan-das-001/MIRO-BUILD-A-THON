@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare — AI Support Chat</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand"><span class="brand-dot"></span><h1>MindCare</h1></div>
+    <div class="nav-right">
+      <a href="dashboard.html" class="btn-outline small">← Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="chat-wrapper">
+    <div class="chat-card">
+      <div class="chat-header">
+        <h2>AI Support Chat</h2>
+        <p>This is a first-response assistant, not a replacement for a counselor.</p>
+      </div>
+
+      <div id="chatWindow" class="chat-window">
+        <div class="msg bot">Hi, I'm here to listen. How are you doing today?</div>
+      </div>
+
+      <div id="crisisBanner" class="crisis-banner hidden">
+        ⚠️ It sounds like you might be going through something serious. A counselor has been alerted and will reach out. If you're in immediate danger, please contact your campus emergency line or a crisis helpline right now.
+      </div>
+
+      <form id="chatForm" class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Type how you're feeling..." autocomplete="off" required>
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
